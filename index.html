@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>interview</title>
+    <link rel="stylesheet" href="./ASSETS/font icons/fonts.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <header>
+            <span class='toggle-nav'>
+                <i class='icon-navicon'></i>
+            </span>
+            <img src="./ASSETS/logo/logo.svg" alt="">
+            <span class='user'>
+                <i class='icon-navicon'></i>
+            </span>
+        </header>
+        <div class='main'>
+            <nav class='nav'></nav>
+            <div class="content">
+                <div class='cards'>
+                    <div class='card' style='background-color: #999'>1</div>
+                    <div class='card' style='background-color: #999'>2</div>
+                    <div class='card' style='background-color: #999'>3</div>
+                </div>
+                <div class="search-wrap">
+                    <div class="search">
+                        <i class="icon-search"></i>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="tab-item active">All</div>
+                    <div class="tab-item">Physical</div>
+                    <div class="tab-item">Virtual</div>
+                    <div class="search">
+                        <i class="icon-search"></i>
+                        <input type="text">
+                    </div>
+                    <div class="toggle">
+                        <i class="icon-th-card"></i>
+                        <i class="icon-th-list"></i>
+                    </div>
+                </div>
+                <div class='list'>
+                    <div class='item'>
+                        <img src="./ASSETS/os icons/windows.png" alt="">
+                        <div class='detail'>
+                            <div class="line1">
+                                <div>
+                                    <i class='icon-desktop'></i>
+                                    <span class='clolr-00b4cf'>bjstdmngbgr01.thoughtworks.com</span>
+                                    <span class='flag bgclolr-7fbc39'>idle</span>
+                                </div>
+                                <div>
+                                    <i class='icon-info'></i>
+                                    <span>192.168.1.102</span>
+                                </div>
+                                <div>
+                                    <i class='icon-folder'></i>
+                                    <span>/var/lib/cruise-agent</span>
+                                </div>
+                            </div>
+                            <div class="line2">
+                                <span class='add bgclolr-00b4cf'>
+                                    <i class='icon-plus'></i>
+                                </span>
+                                <div class="browsers">
+                                    <span class="browser bgclolr-efefef">
+                                        Firefox
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                    <span class="browser bgclolr-efefef">
+                                        Safari
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                    <span class="browser bgclolr-efefef">
+                                        Ubuntu
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                    <span class="browser bgclolr-efefef">
+                                        Chrome
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <img src="./ASSETS/os icons/windows.png" alt="">
+                        <div class='detail'>
+                            <div class="line1">
+                                <div>
+                                    <i class='icon-desktop'></i>
+                                    <span class='clolr-00b4cf'>bjstdmngbgr01.thoughtworks.com</span>
+                                    <span class='flag bgclolr-ff9a2a'>building</span>
+                                </div>
+                                <div>
+                                    <i class='icon-info'></i>
+                                    <span>192.168.1.102</span>
+                                </div>
+                                <div>
+                                    <i class='icon-folder'></i>
+                                    <span>/var/lib/cruise-agent</span>
+                                </div>
+                            </div>
+                            <div class="line2">
+                                <span class='add bgclolr-00b4cf'>
+                                    <i class='icon-plus'></i>
+                                </span>
+                                <div class="browsers">
+                                    <span class="browser bgclolr-efefef">
+                                        Firefox
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                    <span class="browser bgclolr-efefef">
+                                        Safari
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                    <span class="browser bgclolr-efefef">
+                                        Ubuntu
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                    <span class="browser bgclolr-efefef">
+                                        Chrome
+                                        <i class='icon-trash'></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            window.$ = function (selector) {
+                return document.querySelectorAll(selector);
+            }
+            window.$1 = function (selector) {
+                return document.querySelector(selector);
+            }
+        })()
+    </script>
+    <script>
+        $1('.toggle-nav').addEventListener('click', function () {
+            $1('.nav').classList.toggle('show');
+        })
+    </script>
+</body>
+
+</html>
